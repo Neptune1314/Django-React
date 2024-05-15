@@ -1,0 +1,7 @@
+ python -m venv env
+ Get-ExecutionPolicy
+ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force 
+ env\Scripts\activate
+ pip install -r requirements.txt 
+ django-admin startproject backend
+ python manage.py startapp api

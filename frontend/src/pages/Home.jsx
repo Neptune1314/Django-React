@@ -22,6 +22,14 @@ function Home() {
       .catch((err) => alert(err));
   };
 
+  const editNote = (id) = {
+    api
+    .put(`/api/notes/delete/${id}/`)
+      .then((res) => {
+      
+      })
+  };
+
   const deleteNote = (id) => {
     api
       .delete(`/api/notes/delete/${id}/`)
